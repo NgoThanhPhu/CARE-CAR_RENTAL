@@ -1,0 +1,99 @@
+main {
+    margin-top: 100px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+.adding{
+    text-align: center;
+}
+.btn-care{
+    text-align: center;
+    background: linear-gradient(to bottom right,#F87E7B,#B05574);;
+    padding: 1em 2em;
+    color: cornsilk;
+    border: 0;
+}
+.btn-sm{
+    margin-bottom: 5px;
+}
+/*Card*/
+.card{
+    margin-top: 30px;
+    border: 0;
+}
+.card img{
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 200px;
+}
+.card-body:hover{
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.2);
+}
+.card-body{
+    background: linear-gradient(to bottom right,#F87E7B,#B05574);
+    padding: 2px 16px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3;
+}
+.card-text{
+    overflow-y: scroll;
+    -ms-overflow-style: none;
+    height: 77px;
+}
+.card-text::-webkit-scrollbar{
+    display: none;
+}
+
+/*MODAL*/
+.modal-content {
+    font-weight: bold;
+    padding: 5px;
+    background: linear-gradient(to bottom right,#F87E7B,#B05574);
+}
+.form-control {
+    margin: 1em 0;
+}
+.form-control:hover, .form-control:focus {
+    outline: none;
+    background-color: transparent;
+    border: none;
+    box-shadow: none;  
+}
+ #brand.brand, #model.model, #photo.photo, #color.color, #licenseplate.licenseplate, #detail.detail, #phonenum.phonenum, #price.price  {
+    background-color: transparent;
+    outline: none;
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+    border-bottom: 2px solid #eee;
+    padding-left: 0;
+    font-weight: normal;
+    background: transparent;  
+}
+.form-control::-webkit-input-placeholder {
+    color: purple;  
+}
+.form-control:focus::-webkit-input-placeholder {
+    font-weight: bold;
+    color: purple;
+}
+.modal-submit {
+    padding: 6px 20px;
+    border-radius: 20px;
+    background: none;
+    border: 2px solid #FAB87F;
+    color: #FAB87F;
+    font-weight: bold;
+    transition: all .5s;
+    margin-top: 1em;
+}
+.modal-submit:hover {
+    background: #FAB87F;
+    color: #fff;
+}
+div ul li.nav-link:hover{
+    border-bottom: 2px firebrick;
+    border-top: 2px firebrick;
+}
+  
