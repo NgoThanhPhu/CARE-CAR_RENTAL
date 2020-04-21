@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=1.0, minimum-scale=1.0, maximum-scale=1.0">
+    <title>Booking Car</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
+    <link rel="stylesheet" type="text/css" href="/css/contact.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css"/>
+    <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
+</head>
+<body>
+<header>
+    <div class="main">
+        <div class="logo">
+            <a href="/home/main"><img src="/images/care_logo.png" style="padding: 20px"></a>
+        </div>
+        <ul>
+            <li><a href="/home/main">HOME</a></li>
+            <li><a href="/home/book">BOOK</a></li>
+            <li><a href="/home/about">ABOUT</a></li>
+            <li><a href="/home/service">SERVICE</a></li>
+            <li class="active"><a href="/home/contact">CONTACT</a></li>
+            <li><a href="/home/profile" style="background: none"><i class="fas fa-user-circle"></i><%=data.first_name%></a></li>
+            <a href="/"><span type="submit"><i class="fas fa-sign-out-alt" style="color: white"></i></span></a>
+        </ul>
+    </div>
+    <div>
+        <form class="contact">
+            <table >
+                <tr>
+                    <td> <span class="th">Company:</span><span class="nd">CAREVN</span></td>
+                    <td> <span class="th">Name:</span><span class="nd">Ngô Thanh Phú</span></td>
+                    <td> <span class="th">Phone:</span><span class="nd">0339684945</span></td>
+                </tr>
+                <tr>
+                    <td> <span class="th">Company Email:</span><a href="mailto:contact@carevn.com" class="nd" style="text-decoration: none">contact@carevn.com</a></td>
+                    <td> <span class="th">Personal:</span><a href="mailto:ngothanhphu@gmail.com" class="nd" style="text-decoration: none">ngothanhphu@gmail.com</a></td>
+                    <td> <span class="th">Address:</span><span class="nd">HCM city</span></td>
+                </tr>
+                <tr>
+                    <td></td>
+                </tr>
+            </table>
+            <div class="contact-info">
+                <table>
+                    <tr>
+                        <td style="width: 5%">
+                            <a href="/home/service"><i class="fas fa-caret-left left"></i></a>
+                        </td>
+                        <td style="width: 95%;">
+                            <form >
+                                <br><br>
+                                <i class="far fa-user"></i>
+                                <input placeholder="Your name here" style="color: white; font-size: 18px"><br><hr>
+                                <i class="fas fa-phone-square-alt"></i>
+                                <input placeholder="Your phone number" style="color: white; font-size: 18px"><br><hr>
+                                <i class="fas fa-venus-mars"></i>
+                                <select style="color: white; font-size: 18px">
+                                    <option>Male</option>
+                                    <option>Female</option>
+                                    <option>Other</option>
+                                </select><br><hr>
+                                <i class="far fa-edit"></i>
+                                <input class="feedback" placeholder="Give us your feedback" style="color: white; font-size: 18px"><br><hr>
+                                <button id="btn" onclick="" style="color: white">Submit</button>
+                                <div class="map">
+                                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3920.2469012079055!2d106.61294061480017!3d10.715429992362887!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752df050762eed%3A0xb977eebcceacb9ab!2sChung%20C%C6%B0%20Ehome3!5e0!3m2!1svi!2s!4v1586624746585!5m2!1svi!2s" width="730px" height="350px" frameborder="0" style="border:0; border-radius: 10px" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                                </div>
+                                <div class="icon">
+                                    <i class="fab fa-twitter-square footer"></i>
+                                    <i class="fab fa-linkedin footer"></i>
+                                    <i class="fab fa-google-plus-square footer"></i>
+                                    <a href="https://www.facebook.com/Carevn-104159871197374/"><i class="fab fa-facebook-square footer"></i></a>
+                                    <a href="mailto:ngothanhphu@gmail.com"><i class="fas fa-envelope footer"></i></a>
+                                </div>
+                            </form>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </form>
+    </div>
+</header>
+</body>
+</html>

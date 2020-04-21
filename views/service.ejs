@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=1.0, minimum-scale=1.0, maximum-scale=1.0">
+    <title>Booking Car</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
+    <link rel="stylesheet" type="text/css" href="/css/service.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css"/>
+    <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
+</head>
+<body>
+<header style="display: block">
+    <div class="main">
+        <div class="logo">
+            <a href="/home/main"><img src="/images/care_logo.png" style="padding: 20px"></a>
+        </div>
+        <ul>
+            <li><a href="/home/main">HOME</a></li>
+            <li><a href="/home/book">BOOK</a></li>
+            <li><a href="/home/about">ABOUT</a></li>
+            <li  class="active"><a href="/home/service">SERVICE</a></li>
+            <li><a href="/home/contact">CONTACT</a></li>
+            <li><a href="/home/profile" style="background: none"><i class="fas fa-user-circle"></i><%=user.first_name%></a></li>
+            <a href="/"><span type="submit"><i class="fas fa-sign-out-alt" style="color: white"></i></span></a>
+        </ul>
+    </div>
+    <form class="about">
+        <table>
+            <tr>
+                <td style="width: 5%">
+                    <a href="/home/about"><i class="fas fa-caret-left left"></i></a>
+                </td>
+
+                <td style="width: 90%"><br>
+                    <h2 style="text-align: center; font-size: 40px; color: white">Dịch vụ của chúng tôi</h2><br><br>
+                    <span class="bigcontent">Bước 1: Đăng kí tài khoản thành viên <span style="color: #8bc34a">Care</span></span>
+                    <br><br><span class="midcontent">Truy cập website để đăng ký thành viên. Ngay lúc này, bạn đã có thể trải nghiêm các tính năng mới lạ và tham khảo hàng trăm mẫu mã xe trên ứng dụng <span style="color: #8bc34a">Care</span>.</span>
+
+                    <br><br><br><br><span class="bigcontent">Bước 2: Tìm kiếm những chiếc xe phù hợp</span>
+                    <br><br><span class="midcontent">Nhập lịch trình chuyến đi và địa điểm thuê xe, <span style="color: #8bc34a">Care</span> sẽ nhanh chóng tìm kiếm và đề xuất các xe phù hợp đang sẵn sàng phục vụ trong khu vực xung quanh bạn.</span>
+
+                    <br><br><br><br><span class="bigcontent">Bước 3: Đặt xe</span>
+                    <br><br><span class="midcontent">Lựa chọn chiếc xe bạn yêu thích và gửi yêu cầu thuê xe đến chủ xe. Các chủ xe sẽ nhanh chóng nhận được yêu cầu, xem xét thông tin cá nhân của bạn và xác nhận đồng ý hoặc từ chối cho thuê xe trong vòng 10-15 phút. Trong thời gian chờ đợi, bạn có thể gửi thêm Yêu cầu thuê xe đến các chủ xe khác. (Bạn được phép gửi tối đa không quá 3 yêu cầu thuê xe cho cùng một lịch trình đi và về và tùy thuộc vào mức giá mà dịch vụ xe khác nhau).</span>
+
+                    <br><br><br><br><span class="bigcontent">Bước 4: Nhận xe</span>
+                    <br><br><span class="midcontent">Bạn và chủ xe liên hệ gặp nhau để nhận xe. Ở <span style="color: #8bc34a">Care</span>, có nhiều chủ xe sẵn sàng đem xe đến tận nơi cho bạn. Kiểm tra tình trạng và giấy tờ xe, xuất trình bản gốc các giấy tờ của bạn, kí hợp đồng, biên bản bàn giao xe, nhận chìa khóa và lái xe bắt đầu hành trình của bạn.
+
+                    <br><br><br><br><span class="bigcontent">Bước 5: Sử dụng</span>
+                    <br><br><span class="midcontent">Trải nghiệm cảm giác lái xe như một ông chủ thật sự, tận hưởng khoảng thời gian tuyệt vời bên cạnh những người thân yêu cùng chiếc ô tô bạn yêu thích.</span>
+
+                    <br><br><br><br><span class="bigcontent">Bước 6: Trả xe</span>
+                    <br><br><span class="midcontent">Hết thời gian thuê, bạn hoàn trả xe giống như tình trạng và các thỏa thuận ban đầu. Kí xác nhận biên bản bàn giao, nhận lại giấy tờ để hoàn thành chuyến đi tuyệt vời của bạn. Và cũng đừng quên cho điểm rating cũng như gửi nhận xét của bạn đến chủ xe để nâng cao chất lượng phục vụ cho những hành trình sắp tới cùng <span style="color: #8bc34a">Care</span> nhé !</span>
+
+
+                </td>
+
+                <td style="width: 5%">
+                    <a href="/home/contact"><i class="fas fa-caret-right right"></i></a>
+                </td>
+            </tr>
+        </table><br><br>
+
+    </form>
+
+</header>
+</body>
+</html>

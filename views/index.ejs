@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=1.0, minimum-scale=1.0, maximum-scale=1.0">
+    <title>Booking Car</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
+    <link rel="stylesheet" type="text/css" href="/css/dangnhap.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css"/>
+    <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
+</head>
+<body>
+<header>
+    <form role="form" method="POST" action="/login">
+        <img src="/images/care_logo.png" style="margin-top: -100px; padding-bottom: 60px">
+        <div>
+            <p class="bill">Đăng nhập</p>
+            <% if (message.length > 0) { %>
+                <div class="alert alert-danger col-sm-12"><%= message %></div>
+            <% } %>
+        </div>
+        <br>
+        <div class="si">
+            <i class="fas fa-user"></i>
+            <input type="text" id="mailsdt" name="user_name" class="line" placeholder="Username">
+        </div>
+        <div class="si">
+            <i class="fas fa-lock"></i>
+            <input type="password" id="mk" name="password" class="line" placeholder="Password">
+        </div>
+        <div style="padding-top:15px; font-size:20px" >
+            Hoặc nhấn
+            <a href="/signup">
+                vào đây
+            </a> để đăng ký!
+        </div>
+        <div class="button">
+            <button type="submit" class="btn" id="btn" style="width: 280px; margin-top: 10px; font-size: 20px">Đăng nhập</button>
+        </div>
+        <br><p style="color: black; font-weight: bold; padding-top: 20px">Cám ơn bạn đã đồng hành cùng <span style="color: #8bc34a">Care</span></p>
+    </form>
+</header>
+</body>
+
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=1.0, minimum-scale=1.0, maximum-scale=1.0">
+    <title>Booking Car</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
+    <link rel="stylesheet" type="text/css" href="/css/about.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css"/>
+    <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
+</head>
+<body>
+<header style="display: block">
+    <div class="main">
+        <div class="logo">
+            <a href="/home/main"><img src="/images/care_logo.png" style="padding: 20px"></a>
+        </div>
+        <ul>
+            <li><a href="/home/main">HOME</a></li>
+            <li><a href="/home/book">BOOK</a></li>
+            <li  class="active"><a href="/home/about">ABOUT</a></li>
+            <li><a href="/home/service">SERVICE</a></li>
+            <li><a href="/home/contact">CONTACT</a></li>
+            <li><a href="/home/profile" style="background: none"><i class="fas fa-user-circle"></i><%=user.first_name%></a></li>
+            <a href="/"><span type="submit"><i class="fas fa-sign-out-alt" style="color: white"></i></span></a>
+        </ul>
+    </div>
+    <form class="about">
+        <table>
+            <tr>
+                <td style="width: 10%">
+                    <a href="/home/book"><i class="fas fa-caret-left left"></i></a>
+                </td>
+
+                <td style="width: 70%"><br>
+                    <h2 style="color: white">Về chúng tôi</h2><br>
+                    <span class="midcontent">Công ty Cổ phần <span style="color: #8bc34a">Care</span> Việt Nam hoạt động trên nền tảng ứng dụng cho thuê xe tự lái 4 - 7 chỗ, theo mô hình kinh tế sẻ chia.
+                        <br><br><span style="color: #8bc34a">Care</span> đã có mặt ở hầu hết các quận huyện TPHCM và các tỉnh thành lớn như Hà Nội, Cần thơ và đang tiếp tục mở rộng sang các tỉnh thành khác.</span>
+                    <br><br><span class="smallcontent">Chúng tôi cam kết phục vụ với chất lượng tốt nhất, hiện đại nhất và thân thiện với cả khách hàng và môi trường.</span>
+                    <br><br><br>
+                    <a href="/home/contact" style="text-decoration: none"><span class="btncontact">Liên hệ với chúng tôi</span></a>
+                </td>
+                <td style="width: 20%">
+                    <i class="fas fa-users user"></i>
+                </td>
+
+                <td style="width: 10%">
+                    <a href="/home/service"><i class="fas fa-caret-right right"></i></a>
+                </td>
+            </tr>
+        </table><br><br>
+
+
+        <table>
+            <tr>
+                <td style="width: 30%">
+                    <i class="fas fa-gift price"></i>
+                </td>
+                <td style="width: 70%"><br>
+                    <h2 style="color: white">Giá trị của Care mang lại</h2><br>
+                    <span class="midcontent"><span style="color: #8bc34a">Care</span> hướng tới việc xây dựng một cộng đồng chia sẻ ô tô văn minh với nhiều tiện ích nhằm nâng cao chất lượng cuộc sống của cộng đồng.</span><br><br>
+                    <br><br><span class="midcontent "><span style="color: #8bc34a">Care</span> được thành lập với sứ mệnh mang đến nền tảng công nghệ hiện đại kết nối chủ xe ô tô và hành khách theo cách <span style="color: #fff"><em>nhanh chóng</em></span>, <span style="color:  #fff"><em>tiết kiệm</em></span> và <span style="color:  #fff"><em>an toàn</em></span>.</span>
+                    <br><br><br>
+                </td>
+            </tr>
+        </table><br><br>
+
+        <table>
+            <tr>
+                <td style="width: 70%"><br>
+                    <h2 style="color: white">Lợi thế của <span style="color: #8bc34a">Care</span></h2>
+                    <span class="midcontent"><br><br><span style="color: #8bc34a">Care</span> đã có mặt ở hầu hết các quận huyện TPHCM và các tỉnh thành lớn như Hà Nội, Cần thơ và đang tiếp tục mở rộng sang các tỉnh thành khác.</span>
+                    <br><br><i class="fas fa-mobile-alt smallicon"></i><span class="midcontent">Đặt xe dễ dàng, nhanh chóng.</span>
+                    <br><br> <i class="fas fa-car smallicon"></i><span class="midcontent">Hơn 100+ mẫu xe.</span>
+                    <br><br><i class="fas fa-hand-holding-usd smallicon"></i><span class="midcontent">Rẻ hơn 10% xe truyền thống.</span>
+                    <br><br><i class="fas fa-piggy-bank smallicon"></i><span class="midcontent">Thu nhập 10 - 50 triệu/tháng (tùy mẫu xe).</span>
+                    <br><br><br>
+                    <a href="/home/service" style="text-decoration: none"><span class="btncontact">Dịch vụ</span></a>
+                </td>
+                <td style="width: 30%">
+                    <i class="fas fa-search-dollar user"></i>
+                </td>
+            </tr>
+        </table><br><br>
+        </div>
+    </form>
+
+</header>
+</body>
+</html>

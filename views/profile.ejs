@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=1.0, minimum-scale=1.0, maximum-scale=1.0">
+  <title>Booking Car</title>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
+  <link rel="stylesheet" type="text/css" href="/css/profile.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css"/>
+  <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
+</head>
+<body>
+<header style="display: block">
+  <div class="main">
+    <div class="logo">
+      <a href="/home/main"><img src="/images/care_logo.png" style="padding: 20px"></a>
+    </div>
+    <ul>
+      <li><a href="/home/main">HOME</a></li>
+      <li><a href="/home/book">BOOK</a></li>
+      <li><a href="/home/about">ABOUT</a></li>
+      <li><a href="/home/service">SERVICE</a></li>
+      <li><a href="/home/contact">CONTACT</a></li>
+      <li><a href="/home/profile" style="background: none"><i class="fas fa-user-circle"></i><%=user.first_name%></a></li>
+      <a href="/"><span type="submit"><i class="fas fa-sign-out-alt" style="color: white"></i></span></a>
+    </ul>
+  </div>
+  <div class="container">
+    <h2 style="float: left;padding: 50px 30px;color: white; font-weight: bold">YOUR PROFILE</h2>
+    <div class="button">
+      <a href="/home/booking" class="bttn">YOUR BOOKING</a> or
+      <a href="/home/logout" class="bttn">LOG OUT</a>
+    </div>
+    <table class="table">
+      <thead>
+      <tr>
+        <th>Firstname</th>
+        <th>Lastname</th>
+        <th>Phone</th>
+        <th>User name</th>
+        <th>Email</th>
+      </tr>
+      </thead>
+      <tbody>
+
+      <tr class="info">
+        <td><%=user.first_name%></td>
+        <td><%=user.last_name%></td>
+        <td><%=user.mob_no%></td>
+        <td><%=user.user_name%></td>
+        <td><%=user.email%></td>
+      </tr>
+
+      </tbody>
+    </table>
+  </div>
+
+
+
+</header>
+</body>
+</html>

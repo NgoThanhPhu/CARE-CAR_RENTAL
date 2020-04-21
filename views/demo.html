@@ -1,0 +1,17 @@
+if(req.method == "post"){
+var post  = req.body;
+var seats= post.seats;
+var user = req.session.user,
+userId = req.session.userId;
+/*if(userId == null){
+res.redirect("/login");
+return;
+}*/
+console.log(seats);
+var sql = "SELECT * FROM `users` WHERE `id`=? ; SELECT * FROM `car` WHERE `Seats`='"+7+"'";
+
+db.query(sql, [userId], function (err, results) {
+console.log(results[1]);
+res.render('book.ejs', {user: user});
+});
+}

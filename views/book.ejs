@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=1.0, minimum-scale=1.0, maximum-scale=1.0">
+    <title>Booking Car</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
+    <link rel="stylesheet" type="text/css" href="/css/booking.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css"/>
+    <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
+</head>
+<body>
+<header>
+    <div class="mainbook">
+    <div class="main">
+        <div class="logo">
+            <a href="/home/main"><img src="/images/care_logo.png" style="padding: 20px"></a>
+        </div>
+        <ul>
+            <li><a href="/home/main">HOME</a></li>
+            <li class="active"><a href="/home/book">BOOK</a></li>
+            <li><a href="/home/about">ABOUT</a></li>
+            <li><a href="/home/service">SERVICE</a></li>
+            <li><a href="/home/contact">CONTACT</a></li>
+            <li><a href="/home/profile" style="background: none"><i class="fas fa-user-circle"></i><%=user.first_name%></a></li>
+            <a href="/"><span><i class="fas fa-sign-out-alt" style="color: white"></i></span></a>
+        </ul>
+    </div>
+        <form role="form" method="POST" action="/home/book">
+            <span class="formtitle1">CAR RENTAL</span><br><br>
+            <span class="formtitle2">BE WITH YOU IN EVERY JOURNEY</span><br>
+            <i class="fas fa-map-marker-alt"></i>
+            <input name="address"  type="text" id="place" class="place" placeholder="Your address..." required style="color: white; font-size: 18px"><hr>
+            <i class="fas fa-plane-departure"></i>
+            <select name="optstart" id="optstart" style="color: white; font-size: 18px">
+                <option value="0">00:00 </option>
+                <option value="30">00:30 </option>
+                <option value="60">01:00 </option>
+                <option value="90">01:30 </option>
+                <option value="120">02:00 </option>
+                <option value="150">02:30 </option>
+                <option value="180">03:00 </option>
+                <option value="210">03:30 </option>
+                <option value="240">04:00 </option>
+                <option value="270">04:30 </option>
+                <option value="300">05:00 </option>
+                <option value="330">05:30 </option>
+                <option value="360">06:00 </option>
+                <option value="390">06:30 </option>
+                <option value="420">07:00 </option>
+                <option value="450">07:30 </option>
+                <option value="480">08:00 </option>
+                <option value="510">08:30 </option>
+                <option value="540">09:00 </option>
+                <option value="570">09:30 </option>
+                <option value="600">10:00 </option>
+                <option value="630">10:30 </option>
+                <option value="660">11:00 </option>
+                <option value="690">11:30 </option>
+                <option value="720">12:00 </option>
+                <option value="750">12:30 </option>
+                <option value="780">13:00 </option>
+                <option value="810">13:30 </option>
+                <option value="840">14:00 </option>
+                <option value="870">14:30 </option>
+                <option value="900">15:00 </option>
+                <option value="930">15:30 </option>
+                <option value="960">16:00 </option>
+                <option value="990">16:30 </option>
+                <option value="1020">17:00 </option>
+                <option value="1050">17:30 </option>
+                <option value="1080">18:00 </option>
+                <option value="1110">18:30 </option>
+                <option value="1140">19:00 </option>
+                <option value="1170">19:30 </option>
+                <option value="1200">20:00 </option>
+                <option value="1230">20:30 </option>
+                <option value="1260">21:00 </option>
+                <option value="1290">21:30 </option>
+                <option value="1320">22:00 </option>
+                <option value="1350">22:30 </option>
+                <option value="1380">23:00 </option>
+                <option value="1410">23:30 </option>
+            </select>
+            <input name="date1" type="date" class="place" id="date1" required style="color: white; font-size: 18px"><hr><br>
+            <i class="fas fa-plane-arrival"></i>
+            <select name="optend" id="optend" style="color: white; font-size: 18px">
+                <option value="0">00:00 </option>
+                <option value="30">00:30 </option>
+                <option value="60">01:00 </option>
+                <option value="90">01:30 </option>
+                <option value="120">02:00 </option>
+                <option value="150">02:30 </option>
+                <option value="180">03:00 </option>
+                <option value="210">03:30 </option>
+                <option value="240">04:00 </option>
+                <option value="270">04:30 </option>
+                <option value="300">05:00 </option>
+                <option value="330">05:30 </option>
+                <option value="360">06:00 </option>
+                <option value="390">06:30 </option>
+                <option value="420">07:00 </option>
+                <option value="450">07:30 </option>
+                <option value="480">08:00 </option>
+                <option value="510">08:30 </option>
+                <option value="540">09:00 </option>
+                <option value="570">09:30 </option>
+                <option value="600">10:00 </option>
+                <option value="630">10:30 </option>
+                <option value="660">11:00 </option>
+                <option value="690">11:30 </option>
+                <option value="720">12:00 </option>
+                <option value="750">12:30 </option>
+                <option value="780">13:00 </option>
+                <option value="810">13:30 </option>
+                <option value="840">14:00 </option>
+                <option value="870">14:30 </option>
+                <option value="900">15:00 </option>
+                <option value="930">15:30 </option>
+                <option value="960">16:00 </option>
+                <option value="990">16:30 </option>
+                <option value="1020">17:00 </option>
+                <option value="1050">17:30 </option>
+                <option value="1080">18:00 </option>
+                <option value="1110">18:30 </option>
+                <option value="1140">19:00 </option>
+                <option value="1170">19:30 </option>
+                <option value="1200">20:00 </option>
+                <option value="1230">20:30 </option>
+                <option value="1260">21:00 </option>
+                <option value="1290">21:30 </option>
+                <option value="1320">22:00 </option>
+                <option value="1350">22:30 </option>
+                <option value="1380">23:00 </option>
+                <option value="1410">23:30 </option>
+            </select>
+            <input name="date2" type="date" class="place" id="date2" required style="color: white; font-size: 18px"><hr><br>
+            <span class="name">People and Price</span><span style="color: white; font-size: 17px;padding-left: 20px">(Click <a href="/home/service" style="text-decoration: none;color: #9ccc65;font-weight: bold">vào đây</a> để biết thêm chi tiết!) </span><br><br>
+            <i class="far fa-user"></i>
+            <select name="seats" id="opt" style="color: white; font-size: 18px">
+                <option value="" selected="selected">Make a choice</option>
+                <option value="4"> 4 </option>
+                <option value="5"> 5  </option>
+                <option value="7"> 7 </option>
+            </select>
+            <i class="fas fa-search-dollar" style="padding-left: 40px"></i>
+            <select name="optmoney" id="optmoney" style="color: white; font-size: 18px">
+                <option value="" selected="selected">Make a choice</option>
+                <option value="0"> 0 - 500.000 VND </option>
+                <option value="1"> 500.000 - 1.000.000 VND </option>
+                <option value="2"> 1.000.000 trở lên </option>
+            </select><br><hr>
+            <i class="fas fa-phone-alt"></i>
+            <input name="phone" type="text" id="phone" class="place" placeholder="Your phone number..." required style="color: white; font-size: 18px"><hr><br>
+            <button id="myBtn" style="color: white; font-size: 20px" type="submit" onclick="checkvalid()" >BOOK NOW</button>
+        </form>
+    </div>
+</header>
+</body>
+</html>
