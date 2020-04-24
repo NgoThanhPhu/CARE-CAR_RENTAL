@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=1.0, minimum-scale=1.0, maximum-scale=1.0">
+    <title>Booking Car</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
+    <link rel="stylesheet" type="text/css" href="/css/booking.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css"/>
+    <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
+</head>
+<body>
+<header>
+    <div class="main">
+        <div class="logo">
+            <a href="/home/main"><img src="/images/care_logo.png" style="padding: 20px"></a>
+        </div>
+        <ul>
+            <li><a href="/home/main">HOME</a></li>
+            <li><a href="/home/book">BOOK</a></li>
+            <li><a href="/home/about">ABOUT</a></li>
+            <li><a href="/home/service">SERVICE</a></li>
+            <li><a href="/home/contact">CONTACT</a></li>
+            <li><a href="/home/profile" style="background: none"><i class="fas fa-user-circle"></i><%=user.first_name%></a></li>
+            <a href="/"><span type="submit"><i class="fas fa-sign-out-alt" style="color: white"></i></span></a>
+        </ul>
+    </div>
+    <form action="/home/book" method="post">
+        <p class="bill">THÔNG TIN ĐƠN HÀNG</p><br>
+        <br><p class="alert alert-warning col-sm-12 size1">Nếu thời gian thuê ít hơn 5 tiếng thì thành tiền bằng <b>50%</b> đơn giá. Các trường hợp khác đều tính theo ngày! </p><br>
+        <span class="fields">Tên chủ xe:</span><span id="name" style="font-size: 20px;color: white"> <%=user.owner%></span><br>
+        <br><span class="fields">Số điện thoại chủ xe:</span><span id="sdt" style="font-size: 20px;color: white"> <%=user.o_num%></span><br>
+        <br><span class="fields">Mẫu xe:</span><span id="model" style="font-size: 20px;color: white"> <%=user.model%></span><br>
+        <br><span class="fields">Chỗ ngồi:</span><span id="seats" style="font-size: 20px;color: white"> <%=user.seats%></span><br>
+        <br><span class="fields">Biển kiểm soát:</span><span id="bks" style="font-size: 20px;color: white"> <%=user.bks%></span><br>
+        <br><span class="fields">Màu xe:</span><span id="color" style="font-size: 20px;color: white"> <%=user.color%></span><br>
+        <br><span class="fields">Thời gian khởi hành: </span><span id="start" style="font-size: 20px;color: white"> <%=user.start%></span><br>
+        <br><span class="fields">Thời gian kết thúc: </span><span id="end" style="font-size: 20px;color: white"> <%=user.end%></span><br>
+        <br><span class="fields">Đơn giá thuê: </span><span id="dongia" style="font-size: 20px;color: white"> <%=user.unit + ' VND'%></span><br>
+        <br><span class="alert alert-info size2">Thành tiền: </span><span id="money" class="alert alert-danger size2"><%=user.money%></span><br>
+
+        <br><p class="alert alert-info size2">Cám ơn bạn đã tin tưởng <span style="color: #8bc34a">Care</span>! Chúng tôi sẽ sớm liên lạc với bạn.</p>
+    </form>
+
+</header>
+<script src="/js/booking.js"></script>
+</body>
+</html>
