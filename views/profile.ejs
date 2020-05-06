@@ -29,8 +29,10 @@
   <div class="container">
     <h2 style="float: left;padding: 50px 30px;color: white; font-weight: bold">YOUR PROFILE</h2>
     <div class="button">
-      <a href="/home/booking" class="bttn">YOUR BOOKING</a> or
-      <a href="/home/logout" class="bttn">LOG OUT</a>
+      <a class="bttn" onclick="alert2()">YOUR BOOKING</a> or
+      <a class="bttn" onclick="alert1()">EDIT PROFILE</a> or
+      <a href="/home/logout" class="bttn">LOG OUT</a><br><br>
+      <p id="annouce"></p>
     </div>
     <table class="table">
       <thead>
@@ -59,5 +61,15 @@
 
 
 </header>
+<script>
+  function alert1() {
+    var tagP = document.getElementById('annouce');
+    tagP.innerHTML = 'Are you sure? If yes, click <a href="/home/edit" style="text-decoration: none; color: #43be31; font-weight: bold">here </a>to continue!';
+  }
+  function alert2() {
+    var tagP = document.getElementById('annouce');
+    tagP.innerHTML = 'Vui lòng <a href="/login" style="text-decoration: none; color: #43be31; font-weight: bold"> đăng nhập </a> lại để cập nhật bill mới! Or click <a href="/home/booked" style="text-decoration: none; color: #43be31; font-weight: bold">here </a>to continue!';
+  }
+</script>
 </body>
 </html>

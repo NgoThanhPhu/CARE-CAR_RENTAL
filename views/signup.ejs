@@ -1,24 +1,32 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Sample Site</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=1.0, minimum-scale=1.0, maximum-scale=1.0">
+    <title>Booking Car</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css"/>
-   <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+    <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="/css/signup.css" />
     
 </head>
 <body>
+<header>
+<div class="logo">
+    <a href="/"><img src="/images/care_logo.png" style="padding: 20px"></a>
+</div>
     <div class="container col-sm-12" id="mainform">
-            <div id="signupbox" style=" margin-top:50px" class="mainbox col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">
+            <div id="signupbox" style=" margin-top:90px" class="mainbox col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">
                                                            
                     <div class="panel panel-info">
                         <div class="panel-heading">
-                            <div class="panel-title">Sign Up</div>
-                            <div style="float:right; font-size: 85%; position: relative; top:-10px"><a id="signinlink" href="/">Sign In</a></div>
+                            <div class="panel-title" style="text-align: center; font-size: 20px">SIGN UP</div>
+                            <div style="float:right; font-size: 15px; position: relative; top:-10px"><a id="signinlink" href="/">LOG IN</a></div>
                         </div> 
                         <div class="panel-body" >
                             <form class="form-horizontal" role="form" method="post" action="/signup" onSubmit="return checkblank(this);">
                                 <% if (message.length > 0) { %>
-                                      <div class="alert alert-success col-sm-12"><%= message %></div>
+                                      <div class="alert alert-warning col-sm-12" style="font-size: 20px"><%= message %></div>
                                 <% } %>
                                 <div id="signupalert" style="display:none" class="alert alert-danger">
                                     <p>Error:</p>
@@ -43,12 +51,18 @@
                                         <input type="number" class="form-control" name="mob_no" placeholder="Mobile Number">
                                     </div>
                                 </div>
-                                                                                                <div class="form-group">
+                                     <div class="form-group">
                                     <label for="user_name" class="col-md-3 control-label">User Name</label>
                                     <div class="col-md-9">
                                         <input type="text" class="form-control" name="user_name" placeholder="User Name">
                                     </div>
                                 </div>
+                                    <div class="form-group">
+                                        <label for="email" class="col-md-3 control-label">Email</label>
+                                        <div class="col-md-9">
+                                            <input type="text" class="form-control" name="email" placeholder="Email">
+                                        </div>
+                                    </div>
                                 <div class="form-group">
                                     <label for="password" class="col-md-3 control-label">Password</label>
                                     <div class="col-md-9">
@@ -59,7 +73,7 @@
                                 <div class="form-group">
                                     <!-- Button -->                                       
                                     <div class="col-md-offset-3 col-md-9">
-                                        <button id="btn-signup" type="submit" class="btn btn-info"><i class="icon-hand-right"></i> &nbsp Sign Up</button>
+                                        <button id="btn-signup" type="submit" class="btn btn-info" style="padding: 5px 223px; font-size: 18px;background-image: linear-gradient(to right, #19cd4e, #1bd053, #1dd257, #1ed55c, #20d860);"><i class="icon-hand-right"></i>Sign Up</button>
                                         
                                     </div>
                                 </div>
@@ -74,7 +88,7 @@
                 
          </div>
     </div>
-   
+</header>
 </body>
 </html>
  

@@ -27,20 +27,35 @@
         </ul>
     </div>
     <form action="/home/book" method="post">
-        <p class="bill">THÔNG TIN ĐƠN HÀNG</p><br>
-        <br><p class="alert alert-warning col-sm-12 size1">Nếu thời gian thuê ít hơn 5 tiếng thì thành tiền bằng <b>50%</b> đơn giá. Các trường hợp khác đều tính theo ngày! </p><br>
-        <span class="fields">Tên chủ xe:</span><span id="name" style="font-size: 20px;color: white"> <%=user.owner%></span><br>
-        <br><span class="fields">Số điện thoại chủ xe:</span><span id="sdt" style="font-size: 20px;color: white"> <%=user.o_num%></span><br>
-        <br><span class="fields">Mẫu xe:</span><span id="model" style="font-size: 20px;color: white"> <%=user.model%></span><br>
-        <br><span class="fields">Chỗ ngồi:</span><span id="seats" style="font-size: 20px;color: white"> <%=user.seats%></span><br>
-        <br><span class="fields">Biển kiểm soát:</span><span id="bks" style="font-size: 20px;color: white"> <%=user.bks%></span><br>
-        <br><span class="fields">Màu xe:</span><span id="color" style="font-size: 20px;color: white"> <%=user.color%></span><br>
-        <br><span class="fields">Thời gian khởi hành: </span><span id="start" style="font-size: 20px;color: white"> <%=user.start%></span><br>
-        <br><span class="fields">Thời gian kết thúc: </span><span id="end" style="font-size: 20px;color: white"> <%=user.end%></span><br>
-        <br><span class="fields">Đơn giá thuê: </span><span id="dongia" style="font-size: 20px;color: white"> <%=user.unit + ' VND'%></span><br>
-        <br><span class="alert alert-info size2">Thành tiền: </span><span id="money" class="alert alert-danger size2"><%=user.money%></span><br>
+        <p class="bill">THÔNG TIN ĐƠN HÀNG</p>
+        <p class="alert alert-warning col-sm-12 size1">Nếu thời gian thuê ít hơn 5 tiếng thì thành tiền bằng <b>50%</b> đơn giá. Các trường hợp khác đều tính theo ngày! </p><br>
+        <table>
+            <tr>
+                <td><span class="fields">Tên chủ xe:</span><span id="name" style="font-size: 20px;color: white"> <%=car.Name%></span></td>
+                <td colspan="2"><span class="fields space">Số điện thoại chủ xe:</span><span id="sdt" style="font-size: 20px;color: white"> <%=car.SDT%></span></td>
+            </tr>
+            <tr>
+                <td><span class="fields">Mẫu xe:</span><span id="model" style="font-size: 20px;color: white"> <%=car.Model%></span></td>
+                <td><span class="fields space">Thời gian khởi hành: </span><span id="start" style="font-size: 20px;color: white"> <%=start%></span></td>
+            </tr>
+            <tr>
+                <td><span class="fields">Chỗ ngồi:</span><span id="seats" style="font-size: 20px;color: white"> <%=car.Seats%></span></td>
+                <td><span class="fields space">Thời gian kết thúc: </span><span id="end" style="font-size: 20px;color: white"> <%=end%></span></td>
+            </tr>
+            <tr>
+                <td><span class="fields">Màu xe:</span><span id="color" style="font-size: 20px;color: white"> <%=car.Color%></span></td>
+                <td><span class="fields space">Đơn giá thuê: </span><span id="dongia" style="font-size: 20px;color: white"> <%=unit + ' VND'%></span></td>
+            </tr>
+            <tr>
 
-        <br><p class="alert alert-info size2">Cám ơn bạn đã tin tưởng <span style="color: #8bc34a">Care</span>! Chúng tôi sẽ sớm liên lạc với bạn.</p>
+            </tr>
+            <tr>
+                <td colspan="2"><span class="fields">Biển kiểm soát:</span><span id="bks" style="font-size: 20px;color: white"> <%=car.BKS%></span></td>
+            </tr>
+        </table>
+        <br><span><img src="<%=car.img%>" style="width: 700px; height: 450px; border-radius: 10px;"> </span><br>
+        <br><br><span class="alert alert-info size2">Thành tiền: </span><span id="money" class="alert alert-danger size2"><%=money%></span><br>
+        <br><br><br><span><img src="/images/care_logo.png" class="circle"></span><br><br><span class="alert alert-info size2 move" style="background-color: white; font-size: 18px; font-weight: bold">Cám ơn bạn đã tin tưởng! Chúng tôi sẽ sớm liên lạc với bạn.</span>
     </form>
 
 </header>

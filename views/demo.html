@@ -1,17 +1,48 @@
-if(req.method == "post"){
-var post  = req.body;
-var seats= post.seats;
-var user = req.session.user,
-userId = req.session.userId;
-/*if(userId == null){
-res.redirect("/login");
-return;
-}*/
-console.log(seats);
-var sql = "SELECT * FROM `users` WHERE `id`=? ; SELECT * FROM `car` WHERE `Seats`='"+7+"'";
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=1.0, minimum-scale=1.0, maximum-scale=1.0">
+    <title>Booking Car</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css"/>
+    <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="/css/forgot.css" />
 
-db.query(sql, [userId], function (err, results) {
-console.log(results[1]);
-res.render('book.ejs', {user: user});
-});
-}
+</head>
+<body>
+<header>
+    <div class="logo">
+        <a href="/"><img src="/images/care_logo.png" style="padding: 20px"></a>
+    </div>
+    <div class="container col-sm-12" id="mainform">
+        <div id="signupbox" style=" margin-top:90px" class="mainbox col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">
+
+            <div class="" style="padding-top: 10%;">
+                <div class="panel-heading">
+                    <div class="panel-title" style="text-align: center; font-size: 27px; color:#2196f3;">FORGOT PASSWORD? PUT YOUR EMAIL HERE! <i class="fas fa-hand-point-down" style="color: #5bc0de"></i></div>
+                </div>
+                <div class="panel-body" >
+                    <form class="form-horizontal" role="form" method="post" action="/forgot">
+
+                        <div class="form-group">
+                            <div class="col-md-10">
+                                <input type="text" class="form-control" name="first_name" placeholder="Email" style="font-size: 20px">
+                            </div>
+                            <div class="col-md-2">
+                                <button type="submit" class="btn btn-info" style="width: 100px; margin-left: -30px;font-size: 15px">Gửi</button>
+                            </div>
+
+
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+</header>
+</body>
+</html>
+

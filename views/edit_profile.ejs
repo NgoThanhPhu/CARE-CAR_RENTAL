@@ -1,0 +1,103 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=1.0, minimum-scale=1.0, maximum-scale=1.0">
+    <title>Booking Car</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css"/>
+    <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="/css/signup.css" />
+
+</head>
+<body>
+<header>
+    <div class="logo">
+        <a href="/"><img src="/images/care_logo.png" style="padding: 20px"></a>
+    </div>
+    <div class="container col-sm-12" id="mainform">
+        <div id="signupbox" style=" margin-top:90px" class="mainbox col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">
+
+            <div class="panel panel-info">
+                <div class="panel-heading">
+                    <div class="panel-title" style="text-align: center; font-size: 20px">EDIT PROFILE</div>
+                    <div style="float:right; font-size: 85%; position: relative; top:-10px"><a id="signinlink" href="/login">Home</a></div>
+                </div>
+                <div class="panel-body" >
+                    <form class="form-horizontal" role="form" method="post" action="/home/edit">
+                        <div id="signupalert" style="display:none" class="alert alert-danger">
+                            <p>Error:</p>
+                            <span></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="first_name" class="col-md-3 control-label">First Name</label>
+                            <div class="col-md-9">
+                                <input type="text" class="form-control" name="first_name" id="first_name" placeholder="<%=user.first_name%>">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="last_name" class="col-md-3 control-label">Last Name</label>
+                            <div class="col-md-9">
+                                <input type="text" class="form-control" name="last_name" id="last_name" placeholder="<%=user.last_name%>">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="mob_no" class="col-md-3 control-label">Mobile Number</label>
+                            <div class="col-md-9">
+                                <input type="number" class="form-control" name="mob_no" id="mob_no" placeholder="<%=user.mob_no%>">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="email" class="col-md-3 control-label">Email</label>
+                            <div class="col-md-9">
+                                <input type="text" class="form-control" name="email" id="email" placeholder="<%=user.email%>">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="password" class="col-md-3 control-label">Password</label>
+                            <div class="col-md-9">
+                                <input type="password" class="form-control" name="password" id="password" placeholder="<%=user.password%>">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <!-- Button -->
+                            <div class="col-md-offset-3 col-md-9">
+                                <button id="btn-signup" type="submit" class="btn btn-info" onclick="return checkedit()" style="padding: 5px 223px; font-size: 18px;background-image: linear-gradient(to right, #19cd4e, #1bd053, #1dd257, #1ed55c, #20d860);"><i class="icon-hand-right"></i>Edit</button>
+
+                            </div>
+                        </div>
+
+<script>
+    function checkedit() {
+        var fname = document.getElementById('first_name');
+        var lname = document.getElementById('last_name');
+        var mob_no = document.getElementById('mob_no');
+        var pass = document.getElementById('password');
+        var email = document.getElementById('email');
+        if (fname.value == "" || lname.value == "" || mob_no.value == ""
+            || pass.value == "" || email.value == ""){
+            window.alert('Các trường không được để trống!')
+        }else {
+            window.alert('Vui lòng đăng nhập lại để thấy sự thay đổi!');
+        }
+    }
+    function back() {
+        window.location.href = '/login',true;
+    }
+    setTimeout(back,60000);
+</script>
+
+
+                    </form>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+</header>
+</body>
+</html>
+

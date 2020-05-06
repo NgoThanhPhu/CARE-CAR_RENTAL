@@ -1,0 +1,63 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=1.0, minimum-scale=1.0, maximum-scale=1.0">
+    <title>Booking Car</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css"/>
+    <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="/css/forgot.css" />
+
+</head>
+<body>
+<header>
+    <div class="logo">
+        <a href="/"><img src="/images/care_logo.png" style="padding: 20px"></a>
+    </div>
+    <div class="container col-sm-12" id="mainform">
+        <div id="signupbox" style=" margin-top:90px" class="mainbox col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">
+
+            <div class="" style="padding-top: 50%;">
+
+                <div class="panel-body" >
+                    <form class="form-horizontal" role="form" method="post" action="/forgot">
+                        <div class="panel-heading">
+                            <div class="panel-title" style="text-align: center; font-size: 27px; color:#fff;">FORGOT PASSWORD? PUT YOUR EMAIL HERE!</div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-md-10">
+                                <input type="text" class="form-control" name="email" placeholder="Email" style="font-size: 20px;margin-left: 40px;height: 40px">
+                            </div>
+                            <div class="col-md-2">
+                                <button type="submit" class="btn btn-info" style="width: 100px; margin-left: -30px;font-size: 19px">Gửi</button><br>
+                            </div>
+                            <% if (message.length > 0) { %>
+                                <div class="col-sm-12" style="padding: 10px 55px;font-size: 20px;color: white;"><%= message %></div>
+                            <% } %>
+                            <div class="col-md-3">
+                                <span>
+                                    <a href="/login" style="font-size: 22px; float: left; color: white; margin: 40px;"><i class="fas fa-arrow-alt-circle-left"></i></a>
+                                    <a href="https://mail.google.com/" target="_blank" style="font-size: 22px; float: left; color: white;margin-top: 40px "><i class="fas fa-envelope"></i></a>
+                                </span>
+                            </div>
+
+
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+</header>
+<script>
+    function givemail() {
+        var tagP = document.getElementById('annouce');
+        tagP.innerHTML = 'Please check your mail! Click <a href="/login" style="text-decoration: none; color: #43be31; font-weight: bold"> here </a>to continue!';
+    }
+</script>
+</body>
+</html>
+
