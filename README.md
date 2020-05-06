@@ -1,4 +1,4 @@
-# FinalProjectCNPMnhom3
+# CARE - CAR RENTAL
 WEB APP: CAR RENTAL.
 - INTERFACE: HTML, CSS, JAVASCRIPT.
 - BACK END: 
@@ -9,5 +9,5 @@ How to use: User login to Care Rental app (CARE) and starting to booking car, us
 
 
 Coder: 
-- Nguyễn Phạm Mạnh Cường - 518H0479.
-- Ngô Thanh Phú - 518H0243.
+- Nguyễn Phạm Mạnh Cường - Admin interface (including FE & BE).
+- Ngô Thanh Phú - Client interface (including FE & BE).
